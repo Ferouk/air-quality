@@ -27,8 +27,8 @@ $ npm run docker
 
 ## Endpoints
 ### API: /api
-* **Get Air Quality near coordinates (LAT, LON) : /api/pollution (POST)** body: {lat: number, lon: number, department:string} (return pollution)
-* **Get pollution stored in database : /api/pollution (GET)** (return pollution[])
+* **Get Air Quality near coordinates (LAT, LON) : /api/pollution (POST)** body: {lat: number, lon: number} (return pollution)
+* **Get Air Quality stored in database (via CRON Job) : /api/pollution (GET)** (return pollution[])
 * **Get max pollution stored in database : /api/pollution/max (POST)** body: (return pollution)
 
 ### Docs : /api/docs
